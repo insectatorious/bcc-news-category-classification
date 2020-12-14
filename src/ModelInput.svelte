@@ -83,7 +83,7 @@
 
 <Container fluid>
   <Row class="justify-content-center">
-    <Col lg="10" xs="12">
+    <Col lg=6 xs=12>
       <!-- {#if waiting && $timer > 0} -->
         <Progress
           value={$timer}
@@ -124,7 +124,7 @@
 
   <br />
   <Row>
-    <Col lg="12">
+    <Col sm=12 lg=6>
         <ModelResults
           visible={showResult}
           {businessScore}

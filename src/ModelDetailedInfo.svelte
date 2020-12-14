@@ -3,11 +3,11 @@
 </script>
 
 <Container fluid>
-  <Row class="justify-content-center">
+  <!-- <Row class="justify-content-center">
     <Col xs=12 lg=6>
       <h4>Model Information</h4>
     </Col>
-  </Row>
+  </Row> -->
   <Row class="justify-content-center">
     <Col xs=12 lg=6>
     <!-- <h5 class="display-4">Model Information</h5> -->
@@ -50,7 +50,7 @@
     </Col>
   </Row>
   <Row class="justify-content-center">
-    <Col lg=10>
+    <Col lg=6 class="text-center">
       <p>Pre-trained model provided by HuggingFace
         <img src="https://huggingface.co/front/assets/huggingface_logo.svg"
              alt="HuggingFace Logo"
