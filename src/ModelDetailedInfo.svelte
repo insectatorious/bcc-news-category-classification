@@ -2,22 +2,24 @@
   import { Container, Row, Col, Table } from 'sveltestrap';
 </script>
 
-<Container>
+<Container fluid>
   <Row class="justify-content-center">
-    <Col lg=6>
+    <Col xs=12 lg=6>
       <h4>Model Information</h4>
     </Col>
   </Row>
   <Row class="justify-content-center">
+    <Col xs=12 lg=6>
     <!-- <h5 class="display-4">Model Information</h5> -->
 
-    <p class="text-left">
-      TensorFlow backed, trained on Google Colab with GPU. 
-    </p>
+      <p class="text-md-left">
+        TensorFlow backed, trained on Google Colab with GPU.
+      </p>
+    </Col>
   </Row>
 
   <Row class="justify-content-center">
-    <Col lg=8>
+    <Col xs=12 lg=6>
       <Table>
         <thead>
             <tr>
@@ -52,7 +54,7 @@
       <p>Pre-trained model provided by HuggingFace
         <img src="https://huggingface.co/front/assets/huggingface_logo.svg"
              alt="HuggingFace Logo"
-             height="28px"><img><br />
+             height="28px" /><br />
 
       <a href="https://huggingface.co/transformers/model_doc/distilbert.html"
          rel="external"

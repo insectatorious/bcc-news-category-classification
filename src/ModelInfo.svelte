@@ -10,9 +10,19 @@
 
 </script>
 
-<Container>
+<style>
+  #note {
+    color: var(--gray);
+  }
+
+  #note:hover {
+    color: var(--dark-gray);
+  }
+</style>
+
+<Container fluid>
   <Row class="justify-content-center">
-    <Col lg=6>
+    <Col xs=12 lg=6>
       <h4 class="display-4">News Article Classification</h4>
     </Col>
   </Row>
@@ -46,8 +56,7 @@
             and <em>politics</em>.
         </p>
 
-        <p class="small text-md-left"
-           style="color:var(--gray)">
+        <p class="small text-md-left" id="note">
           Note: the model is hosted behind a GCP cloud function.
           A cold start will require upto 20 seconds to load the model.
           If already loaded, classification takes ~2 seconds.

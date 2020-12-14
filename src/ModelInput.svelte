@@ -81,9 +81,9 @@
 	}
 </script>
 
-<Container>
-  <Row>
-    <Col lg="12">
+<Container fluid>
+  <Row class="justify-content-center">
+    <Col lg="10" xs="12">
       <!-- {#if waiting && $timer > 0} -->
         <Progress
           value={$timer}
