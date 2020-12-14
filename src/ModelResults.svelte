@@ -2,11 +2,11 @@
   import ClassScore from './ClassScore.svelte';
   import { Container, Row, Col } from 'sveltestrap';
 
-  export let businessScore = 0.2;
-  export let entertainmentScore = 0.2;
-  export let sportScore = 0.2;
-  export let techScore = 0.2;
-  export let politicsScore = 0.2;
+  export let businessScore = 0;
+  export let entertainmentScore = 0;
+  export let sportScore = 0;
+  export let techScore = 0;
+  export let politicsScore = 0;
   export let visible = false;
 
   $: scores = [{"name": "Business", "score": businessScore},
@@ -20,8 +20,8 @@
 
 </script>
 
-{#if visible}
-<Container>
+
+<Container fluid>
   {#each scores as category}
     <Row>
       <Col sm="4" style="text-align: left">
@@ -41,4 +41,3 @@
     </Row>
   {/each}
 </Container>
-{/if}

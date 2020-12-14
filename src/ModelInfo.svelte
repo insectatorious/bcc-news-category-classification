@@ -22,12 +22,12 @@
 
 <Container fluid>
   <Row class="justify-content-center">
-    <Col xs=12 lg=6>
+    <Col xs=12 lg=8>
       <h4 class="display-4">News Article Classification</h4>
     </Col>
   </Row>
   <Row class="justify-content-center">
-    <Col lg="6">
+    <Col lg="8">
 
 
         <p class="text-md-left">
@@ -45,15 +45,12 @@
           <a href="http://mlg.ucd.ie/datasets/bbc.html"
              rel="external"
              taget="_blank">BBC News Category dataset</a>.
+          </p>
+
+          <p class="text-md-left">
           With an 80-20 split, the fine-tuned model has a 0.9888 accuracy and
           an F1 Score of 0.9887 on the validation set.
-
-          Categories:
-            <em>business</em>,
-            <em>entertainment</em>,
-            <em>sport</em>,
-            <em>tech</em>
-            and <em>politics</em>.
+          
         </p>
 
         <p class="small text-md-left" id="note">

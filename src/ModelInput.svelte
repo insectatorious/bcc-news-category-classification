@@ -19,11 +19,11 @@
   let articleText = null;
   let result = null;
   let showResult = false;
-  let businessScore = 0.2;
-  let entertainmentScore = 0.2;
-  let sportScore = 0.2;
-  let techScore = 0.2;
-  let politicsScore = 0.2;
+  let businessScore = 0.;
+  let entertainmentScore = 0.;
+  let sportScore = 0.;
+  let techScore = 0.;
+  let politicsScore = 0.;
   let waiting = false;
   let classificationTime = 21;
   let timer = resetTimer(0);
@@ -83,7 +83,7 @@
 
 <Container fluid>
   <Row class="justify-content-center">
-    <Col lg=6 xs=12>
+    <Col lg=8 xs=12>
       <!-- {#if waiting && $timer > 0} -->
         <Progress
           value={$timer}
@@ -100,7 +100,7 @@
                        name="text"
                        id="exampleText"
                        maxlength=1024
-                       rows=5
+                       rows=7
                        required
                        bind:value={articleText}
                        placeholder="News article text goes here ..."  />
@@ -112,7 +112,7 @@
           <Col>
             <Button
               color={btnColour}
-              class="btn-block btn-lg"
+              class="btn-block btn-lg btn-raised"
               on:click={getClassification}>
                 {btnText}
             </Button>
@@ -124,7 +124,12 @@
 
   <br />
   <Row class="justify-content-center">
-    <Col sm=12 lg=6>
+    <Col sm=12 lg=8  class="text-md-left">
+      <h4>Results</h4>
+    </Col>
+  </Row>
+  <Row class="justify-content-center">
+    <Col sm=12 lg=8>
         <ModelResults
           visible={showResult}
           {businessScore}
