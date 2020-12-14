@@ -123,7 +123,7 @@
   </Row>
 
   <br />
-  <Row>
+  <Row class="justify-content-center">
     <Col sm=12 lg=6>
         <ModelResults
           visible={showResult}
