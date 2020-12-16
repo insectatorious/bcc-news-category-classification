@@ -86,7 +86,7 @@
     <Col lg=8 xs=12>
       <!-- {#if waiting && $timer > 0} -->
         <Progress
-          value={$timer}
+          value={classificationTime - $timer}
           max={classificationTime}
           min={0}></Progress>
       <!-- {/if} -->
